@@ -1,0 +1,134 @@
+Testcase1:
+  Input:
+    - Nhap thong tin quan ly:
+    - MaSo: QL01
+    - Ten: John
+    - Luong co ban: 20000000
+    - Ty Le Thuong: 0.15
+    - Nhap thong tin ky su:
+    - MaSo: KS01
+    - Ten: Latte
+    - Luong co ban: 18000000
+    - So gio lam them: 10
+  Output:
+    - ---------------------------
+    - Đay la thong tin cua Quan Ly
+    - Nhan Vien: John
+    - MaSo: QL01
+    - Luong co ban: 20000000.00
+    - Tien thuong: 3000000.00
+    - ---------------------------
+    - Đay la thong tin cua Ky Su
+    - Nhan Vien: Latte
+    - MaSo: KS01
+    - Luong co ban: 18000000.00
+    - Tien thuong: 1000000.00
+    - ---------------------------
+
+Testcase2:
+  Input:
+    - Nhap thong tin quan ly:
+    - MaSo: QL02
+    - Ten: Alice
+    - Luong co ban: 25000000
+    - Ty Le Thuong: 0.10
+    - Nhap thong tin ky su:
+    - MaSo: KS02
+    - Ten: Bob
+    - Luong co ban: 15000000
+    - So gio lam them: 20
+  Output:
+    - ---------------------------
+    - Đay la thong tin cua Quan Ly
+    - Nhan Vien: Alice
+    - MaSo: QL02
+    - Luong co ban: 25000000.00
+    - Tien thuong: 2500000.00
+    - ---------------------------
+    - Đay la thong tin cua Ky Su
+    - Nhan Vien: Bob
+    - MaSo: KS02
+    - Luong co ban: 15000000.00
+    - Tien thuong: 2000000.00
+    - ---------------------------
+
+Testcase3:
+  Input:
+    - Nhap thong tin quan ly:
+    - MaSo: QL03
+    - Ten: Charlie
+    - Luong co ban: 30000000
+    - Ty Le Thuong: 0.20
+    - Nhap thong tin ky su:
+    - MaSo: KS03
+    - Ten: Eve
+    - Luong co ban: 10000000
+    - So gio lam them: 5
+  Output:
+    - ---------------------------
+    - Đay la thong tin cua Quan Ly
+    - Nhan Vien: Charlie
+    - MaSo: QL03
+    - Luong co ban: 30000000.00
+    - Tien thuong: 6000000.00
+    - ---------------------------
+    - Đay la thong tin cua Ky Su
+    - Nhan Vien: Eve
+    - MaSo: KS03
+    - Luong co ban: 10000000.00
+    - Tien thuong: 500000.00
+    - ---------------------------
+
+Testcase4:
+  Input:
+    - Nhap thong tin quan ly:
+    - MaSo: QL04
+    - Ten: Diana
+    - Luong co ban: 15000000
+    - Ty Le Thuong: 0.25
+    - Nhap thong tin ky su:
+    - MaSo: KS04
+    - Ten: Frank
+    - Luong co ban: 20000000
+    - So gio lam them: 15
+  Output:
+    - ---------------------------
+    - Đay la thong tin cua Quan Ly
+    - Nhan Vien: Diana
+    - MaSo: QL04
+    - Luong co ban: 15000000.00
+    - Tien thuong: 3750000.00
+    - ---------------------------
+    - Đay la thong tin cua Ky Su
+    - Nhan Vien: Frank
+    - MaSo: KS04
+    - Luong co ban: 20000000.00
+    - Tien thuong: 1500000.00
+    - ---------------------------
+
+Testcase5:
+  Input:
+    - Nhap thong tin quan ly:
+    - MaSo: QL05
+    - Ten: Henry
+    - Luong co ban: 10000000
+    - Ty Le Thuong: 0.30
+    - Nhap thong tin ky su:
+    - MaSo: KS05
+    - Ten: Grace
+    - Luong co ban: 12000000
+    - So gio lam them: 8
+  Output:
+    - ---------------------------
+    - Đay la thong tin cua Quan Ly
+    - Nhan Vien: Henry
+    - MaSo: QL05
+    - Luong co ban: 10000000.00
+    - Tien thuong: 3000000.00
+    - ---------------------------
+    - Đay la thong tin cua Ky Su
+    - Nhan Vien: Grace
+    - MaSo: KS05
+    - Luong co ban: 12000000.00
+    - Tien thuong: 800000.00
+    - ---------------------------
