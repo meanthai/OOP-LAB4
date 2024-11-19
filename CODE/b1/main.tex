@@ -1,0 +1,139 @@
+\clearpage
+\section{Bài 1}
+\subsection{Vấn đề}
+Viết một chương trình C++ để quản lý thông tin nhân viên trong một công ty. Sử dụng
+tính kế thừa để tạo lớp cơ sở NhanVien và hai lớp con Quản lý và Kỹ sư. Mỗi loại nhân
+viên có các thuộc tính như sau:
+\begin{itemize}
+    \item Nhân viên: Mã số nhân viên, Tên, Lương cơ bản.
+    \item Quản lý: Thừa kế từ Nhân viên với thêm thuộc tính là Tỷ lệ thưởng. Phương thức TienThuong () tính toán tiền thưởng dựa trên tỷ lệ thưởng và lương cơ bản.
+    \item Kỹ sư: Thừa kế từ Nhân viên với thêm thuộc tính là Số giờ làm thêm. Phương
+thức TienThuong () tính toán tiền thưởng dựa trên số giờ làm thêm (mỗi giờ làm
+thêm được trả 100.000).
+\end{itemize}
+\textbf{Lưu ý: Đảm bảo rằng chương trình có khả năng nhập và hiển thị thông tin đúng cho cả quản lý và kỹ sư.}
+\newline 
+\textbf{Gợi ý:} 
+\begin{itemize}
+    \item Sử dụng các lớp và tính kế thừa để cấu trúc dữ liệu nhân viên.
+    \item Sử dụng phương thức TienThuong() để tính toán tiền thưởng.
+    \item Sử dụng phương thức Xuat() để hiển thị thông tin.
+\end{itemize}
+\subsection{Class Diagram}
+\includegraphics[width = 14cm]{graphics/cd1.png}
+\subsection{Code}
+\item {\textbf{Lớp Nhân Viên: }}
+\begin{minted}[frame=lines, linenos, breaklines]{c++}
+class NhanVien{
+protected:
+    string MaSo, Ten;
+    double Luong;
+public:
+    NhanVien() {} 
+    NhanVien(string MaSo, string Ten, double Luong) : MaSo(MaSo), Ten(Ten), Luong(Luong) {}
+    virtual ~NhanVien() {}
+    virtual double TienThuong() const = 0;
+    virtual void Xuat() const {
+        cout << "Nhan Vien: " << Ten << "\n";
+        cout << "MaSo: " << MaSo << "\n";
+        cout << "Luong co ban: " << fixed << setprecision(2) << Luong << "\n";
+    }
+};
+\end{minted}
+
+\item{\textbf{Lớp Quản Lý: }}
+\begin{minted}[frame=lines, lineos, breaklines]{c++}
+    class QuanLy : public NhanVien{
+private: 
+    double TyLeThuong;
+public:
+    QuanLy() {}
+    QuanLy(string MaSo, string Ten, double Luong, double TyLeThuong) : NhanVien(MaSo, Ten, Luong), TyLeThuong(TyLeThuong) {}
+    double TienThuong() const override {
+        return TyLeThuong * Luong;
+    }
+    void Xuat() const override{ 
+        cout << "Đay la thong tin cua Quan Ly" << "\n";
+        NhanVien::Xuat();
+        //cout << "Ty le thuong: " << TyLeThuong << "\n";
+        cout << "Tien thuong: " << TienThuong() << "\n";
+        cout << "---------------------------" << "\n";
+    }
+};
+\end{minted}
+\item{\textbf{Lớp Kỹ sư: }}
+\begin{minted}[frame=lines, linenos, breaklines]{c++}
+class KySu : public NhanVien{
+private:
+    int SoGioLamThem;
+public:
+    KySu() {}
+    KySu(string MaSo, string Ten, double Luong, int SoGioLamThem) : NhanVien(MaSo, Ten, Luong), SoGioLamThem(SoGioLamThem) {}
+    double TienThuong() const override {
+        return (double) 100000.0 * SoGioLamThem;
+    }
+    void Xuat() const override{
+        cout << "Đay la thong tin cua Ky Su" << "\n";
+        NhanVien::Xuat();
+        //cout << "So gio lam them: " << SoGioLamThem << "\n";
+        cout << "Tien Thuong: " << TienThuong() << "\n";
+        cout << "---------------------------" << "\n";
+    }
+};
+\end{minted}
+\item{\textbf{Hướng giải quyết:}}
+\begin{itemize}
+    \item Lớp Quản lý và lớp Kỹ Sư kế thừa lớp Nhân Viên
+    \item Sử dụng phương thức TienThuong() để tính toán tiền thưởng.
+    \item Sử dụng phương thức Xuat() để hiển thị thông tin.
+    \item Sử dụng cơ chế đa hình (virtual) để gọi phương thức phù hợp.
+\end{itemize}
+\item{\textbf{Gọi hàm trong main:}}
+\begin{minted}[frame=lines, linenos, breaklines]{c++} 
+#include "quanly.h"
+#include "kysu.h"
+
+string ms, ten;
+double luong, tlt;
+int sogio;
+QuanLy NhapQuanLy() {
+    cout << "Nhap thong tin quan ly: " << "\n";
+    cout << "MaSo: "; 
+    cin >> ms;
+    cout << "Ten: ";
+    cin >> ten;
+    cout << "Luong co ban: ";
+    cin >> luong;
+    cout << "Ty Le Thuong: ";
+    cin >> tlt;
+    QuanLy a(ms, ten, luong, tlt);
+    return a;
+}
+
+KySu NhapKySu() {
+    cout << "Nhap thong tin ky su: " << "\n";
+    cout << "MaSo: "; 
+    cin >> ms;
+    cout << "Ten: ";
+    cin >> ten;
+    cout << "Luong co ban: ";
+    cin >> luong;
+    cout << "So gio lam them: ";
+    cin >> sogio;
+    KySu a(ms, ten, luong, sogio);
+    return a;
+}
+signed main() {
+
+    QuanLy a = NhapQuanLy();
+    KySu b = NhapKySu();
+    cout << "---------------------------" << "\n";
+    a.Xuat();
+    b.Xuat();    
+    return 0;
+
+}
+}
+\end{minted}
+\subsection{Kiểm thử các test case}
+\includegraphics{graphics/test1.png}
