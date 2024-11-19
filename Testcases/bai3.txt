@@ -1,0 +1,125 @@
+Testcase1:
+  Input:
+    - So luong bo: 2
+    - So luong cuu: 3
+    - So luong de: 1
+  Output:
+    - Tieng keu cua gia suc khi doi:
+      - Boooooooooo
+      - Cuuuuuuuuuuuuu
+      - Cuuuuuuuuuuuuu
+      - Cuuuuuuuuuuuuu
+      - Deeeeeeeeee
+    - Thong ke sau mot lua sinh va cho sua:
+      - Loai gia suc Boooooooooo:
+        - So luong moi sinh: <random>
+        - Tong sua: <random> lit
+      - Loai gia suc Cuuuuuuuuuuuuu:
+        - So luong moi sinh: <random>
+        - Tong sua: <random> lit
+      - Loai gia suc Deeeeeeeeee:
+        - So luong moi sinh: <random>
+        - Tong sua: <random> lit
+      - Tong so luong gia suc: <total>
+      - Tong so luong sua thu duoc: <total> lit
+
+Testcase2:
+  Input:
+    - So luong bo: 1
+    - So luong cuu: 2
+    - So luong de: 4
+  Output:
+    - Tieng keu cua gia suc khi doi:
+      - Boooooooooo
+      - Cuuuuuuuuuuuuu
+      - Cuuuuuuuuuuuuu
+      - Deeeeeeeeee
+      - Deeeeeeeeee
+      - Deeeeeeeeee
+      - Deeeeeeeeee
+    - Thong ke sau mot lua sinh va cho sua:
+      - Loai gia suc Boooooooooo:
+        - So luong moi sinh: <random>
+        - Tong sua: <random> lit
+      - Loai gia suc Cuuuuuuuuuuuuu:
+        - So luong moi sinh: <random>
+        - Tong sua: <random> lit
+      - Loai gia suc Deeeeeeeeee:
+        - So luong moi sinh: <random>
+        - Tong sua: <random> lit
+      - Tong so luong gia suc: <total>
+      - Tong so luong sua thu duoc: <total> lit
+
+Testcase3:
+  Input:
+    - So luong bo: 5
+    - So luong cuu: 0
+    - So luong de: 3
+  Output:
+    - Tieng keu cua gia suc khi doi:
+      - Boooooooooo
+      - Boooooooooo
+      - Boooooooooo
+      - Boooooooooo
+      - Boooooooooo
+      - Deeeeeeeeee
+      - Deeeeeeeeee
+      - Deeeeeeeeee
+    - Thong ke sau mot lua sinh va cho sua:
+      - Loai gia suc Boooooooooo:
+        - So luong moi sinh: <random>
+        - Tong sua: <random> lit
+      - Loai gia suc Deeeeeeeeee:
+        - So luong moi sinh: <random>
+        - Tong sua: <random> lit
+      - Tong so luong gia suc: <total>
+      - Tong so luong sua thu duoc: <total> lit
+
+Testcase4:
+  Input:
+    - So luong bo: 0
+    - So luong cuu: 1
+    - So luong de: 2
+  Output:
+    - Tieng keu cua gia suc khi doi:
+      - Cuuuuuuuuuuuuu
+      - Deeeeeeeeee
+      - Deeeeeeeeee
+    - Thong ke sau mot lua sinh va cho sua:
+      - Loai gia suc Cuuuuuuuuuuuuu:
+        - So luong moi sinh: <random>
+        - Tong sua: <random> lit
+      - Loai gia suc Deeeeeeeeee:
+        - So luong moi sinh: <random>
+        - Tong sua: <random> lit
+      - Tong so luong gia suc: <total>
+      - Tong so luong sua thu duoc: <total> lit
+
+Testcase5:
+  Input:
+    - So luong bo: 3
+    - So luong cuu: 3
+    - So luong de: 3
+  Output:
+    - Tieng keu cua gia suc khi doi:
+      - Boooooooooo
+      - Boooooooooo
+      - Boooooooooo
+      - Cuuuuuuuuuuuuu
+      - Cuuuuuuuuuuuuu
+      - Cuuuuuuuuuuuuu
+      - Deeeeeeeeee
+      - Deeeeeeeeee
+      - Deeeeeeeeee
+    - Thong ke sau mot lua sinh va cho sua:
+      - Loai gia suc Boooooooooo:
+        - So luong moi sinh: <random>
+        - Tong sua: <random> lit
+      - Loai gia suc Cuuuuuuuuuuuuu:
+        - So luong moi sinh: <random>
+        - Tong sua: <random> lit
+      - Loai gia suc Deeeeeeeeee:
+        - So luong moi sinh: <random>
+        - Tong sua: <random> lit
+      - Tong so luong gia suc: <total>
+      - Tong so luong sua thu duoc: <total> lit
