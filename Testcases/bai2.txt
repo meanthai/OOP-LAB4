@@ -1,0 +1,84 @@
+Testcase1:
+  Input:
+    - Deluxe a: 3 nights, 150000 PhiDichVu, 50000 PhiPhucVu
+    - Deluxe b: 2 nights, 200000 PhiDichVu, 100000 PhiPhucVu
+    - Premium c: 5 nights, 100000 PhiDichVu
+    - Premium d: 3 nights, 0 PhiDichVu
+    - Business e: 1 night
+  Output:
+    - Doanh thu cua phong a là 2400000
+    - Doanh thu cua phong b là 2650000
+    - Doanh thu cua phong c là 2600000
+    - Doanh thu cua phong d là 1500000
+    - Doanh thu cua phong e là 300000
+    - -------------------------------------
+    - Phong co doanh thu lon nhat la phong b
+    - Voi tong doanh thu la 2650000
+
+Testcase2:
+  Input:
+    - Deluxe a: 2 nights, 50000 PhiDichVu, 20000 PhiPhucVu
+    - Deluxe b: 4 nights, 300000 PhiDichVu, 150000 PhiPhucVu
+    - Premium c: 2 nights, 200000 PhiDichVu
+    - Premium d: 1 night, 50000 PhiDichVu
+    - Business e: 3 nights
+  Output:
+    - Doanh thu cua phong a là 1590000
+    - Doanh thu cua phong b là 3700000
+    - Doanh thu cua phong c là 1200000
+    - Doanh thu cua phong d là 550000
+    - Doanh thu cua phong e là 900000
+    - -------------------------------------
+    - Phong co doanh thu lon nhat la phong b
+    - Voi tong doanh thu la 3700000
+
+Testcase3:
+  Input:
+    - Deluxe a: 1 night, 100000 PhiDichVu, 50000 PhiPhucVu
+    - Deluxe b: 3 nights, 250000 PhiDichVu, 100000 PhiPhucVu
+    - Premium c: 4 nights, 150000 PhiDichVu
+    - Premium d: 2 nights, 0 PhiDichVu
+    - Business e: 2 nights
+  Output:
+    - Doanh thu cua phong a là 905000
+    - Doanh thu cua phong b là 2450000
+    - Doanh thu cua phong c là 2150000
+    - Doanh thu cua phong d là 1000000
+    - Doanh thu cua phong e là 600000
+    - -------------------------------------
+    - Phong co doanh thu lon nhat la phong b
+    - Voi tong doanh thu la 2450000
+
+Testcase4:
+  Input:
+    - Deluxe a: 5 nights, 200000 PhiDichVu, 100000 PhiPhucVu
+    - Deluxe b: 2 nights, 150000 PhiDichVu, 50000 PhiPhucVu
+    - Premium c: 1 night, 100000 PhiDichVu
+    - Premium d: 3 nights, 50000 PhiDichVu
+    - Business e: 4 nights
+  Output:
+    - Doanh thu cua phong a là 4000000
+    - Doanh thu cua phong b là 1650000
+    - Doanh thu cua phong c là 600000
+    - Doanh thu cua phong d là 1550000
+    - Doanh thu cua phong e là 1200000
+    - -------------------------------------
+    - Phong co doanh thu lon nhat la phong a
+    - Voi tong doanh thu la 4000000
+
+Testcase5:
+  Input:
+    - Deluxe a: 4 nights, 250000 PhiDichVu, 150000 PhiPhucVu
+    - Deluxe b: 3 nights, 300000 PhiDichVu, 100000 PhiPhucVu
+    - Premium c: 6 nights, 200000 PhiDichVu
+    - Premium d: 1 night, 0 PhiDichVu
+    - Business e: 5 nights
+  Output:
+    - Doanh thu cua phong a là 3400000
+    - Doanh thu cua phong b là 3700000
+    - Doanh thu cua phong c là 3200000
+    - Doanh thu cua phong d là 500000
+    - Doanh thu cua phong e là 1500000
+    - -------------------------------------
+    - Phong co doanh thu lon nhat la phong b
+    - Voi tong doanh thu la 3700000
